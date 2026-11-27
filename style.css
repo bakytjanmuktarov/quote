@@ -8,12 +8,14 @@ body{
     justify-content: center;
     align-items: center;
     min-height: 100vh;
+    padding: 20px;
     background-color: #1E1E1E;
     color: #1E1E1E;
     transition: background-color 0.3s ease;
 }
 .container{
     text-align: center;
+    width: 100%;
     max-width: 900px;
 }
 .quote{
@@ -53,4 +55,11 @@ body{
 }
 .btn:hover{
     background-color: #6366F1;
+}
+@media (max-width: 600px) {
+    .quote {
+        padding: 30px 20px;
+        min-height: 160px;
+        font-size: 18px;
+    }
 }
