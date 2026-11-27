@@ -4,7 +4,7 @@ const button = document.getElementById('generate-btn');
 async function getQuote() {
     const response = await fetch('https://dummyjson.com/quotes/random');
     const data = await response.json();
-
+    console.log(data);
     quoteText.textContent = data.quote + ' — ' + data.author;
     quoteBlock.classList.add('visible');
 }
